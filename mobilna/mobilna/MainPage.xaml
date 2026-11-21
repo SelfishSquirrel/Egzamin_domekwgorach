@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="mobilna.MainPage">
+
+    <ScrollView>
+        <VerticalStackLayout
+            Padding="30,0"
+            Spacing="25"
+            Margin="20">
+
+            <Label FontSize="40">Domek w gorach</Label>
+            <Image Source="dotnet_bot.png" WidthRequest="200"></Image>
+            <HorizontalStackLayout Background="Teal">
+                <Button x:Name="Polub" Text="POLUB" Clicked="Polub_Clicked" Background="Teal" TextColor="#FFFFFF">
+                </Button>
+                <Button x:Name="Usun" Text="USUN" Clicked="Usun_Clicked" Background="Teal" TextColor="#FFFFFF"></Button>
+                <Button x:Name="Zapisz" Text="ZAPISZ" Background="Teal" TextColor="#FFFFFF"></Button>
+            </HorizontalStackLayout>
+
+            <Label x:Name="LiczbaPolubien" HorizontalTextAlignment="End">0 Polubien</Label>
+
+            <Rectangle Background="Gray" ></Rectangle>
+            <Label FontAttributes="Bold">Opis</Label>
+            <Label TextColor="Gray">Odwiedź komfortowy domek w Sudetach, blisko do szlaków turystycznych.</Label>
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>
